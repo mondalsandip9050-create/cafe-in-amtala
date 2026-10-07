@@ -162,7 +162,7 @@ function About() {
   return (
     <section id="about" className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-24 md:grid-cols-2 md:py-32 lg:px-8">
       <div className="reveal overflow-hidden rounded-3xl shadow-card">
-        <img src={cups.url} alt="Stack of Wildbean Café branded coffee cups" className="aspect-[4/5] w-full object-cover" loading="lazy" />
+        <img src={espresso.url} alt="Espresso in a glass cup with coffee beans" className="aspect-[4/5] w-full object-cover" loading="lazy" />
       </div>
       <div className="reveal">
         <Eyebrow>About us</Eyebrow>
@@ -275,7 +275,7 @@ function Services() {
 function Experience() {
   return (
     <section id="experience" className="relative overflow-hidden py-32 md:py-44">
-      <img src={cups.url} alt="Wildbean Café cups" className="absolute inset-0 h-full w-full object-cover opacity-40" loading="lazy" />
+      <img src={espresso.url} alt="Espresso in a glass cup" className="absolute inset-0 h-full w-full object-cover opacity-40" loading="lazy" />
       <div className="absolute inset-0 bg-gradient-to-b from-background via-background/60 to-background" />
       <div className="reveal relative mx-auto max-w-3xl px-5 text-center">
         <Eyebrow>The experience</Eyebrow>
