@@ -34,7 +34,7 @@ export const Route = createFileRoute("/")({
           "@context": "https://schema.org",
           "@type": "CafeOrCoffeeShop",
           name: cafe.name,
-          telephone: "+919735366728",
+          telephone: "+916291434742",
           address: { "@type": "PostalAddress", streetAddress: cafe.address2, addressLocality: "Amtala", addressRegion: "West Bengal", postalCode: "743503", addressCountry: "IN" },
           openingHours: "Mo-Su 06:00-22:00",
         }),
@@ -382,7 +382,7 @@ function Reserve() {
     e.preventDefault();
     const f = new FormData(e.currentTarget);
     const msg = `Table reservation request%0AName: ${f.get("name")}%0APhone: ${f.get("phone")}%0ADate: ${f.get("date")}%0ATime: ${f.get("time")}%0AGuests: ${f.get("guests")}%0ARequest: ${f.get("note") || "-"}`;
-    window.open(`https://wa.me/919735366728?text=${msg}`, "_blank");
+    window.open(`https://wa.me/916291434742?text=${msg}`, "_blank");
     setSent(true);
   };
   const input = "w-full rounded-xl border border-input bg-background/60 px-4 py-3.5 text-sm placeholder:text-muted-foreground focus:border-primary focus:outline-none";
