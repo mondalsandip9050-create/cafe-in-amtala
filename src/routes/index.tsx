@@ -8,6 +8,9 @@ import {
 import logo from "@/assets/logo.jpg.asset.json";
 import cups from "@/assets/cups.jpg.asset.json";
 import coffee from "@/assets/coffee.jpg.asset.json";
+import espresso from "@/assets/espresso.jpg.asset.json";
+import cold from "@/assets/cold.jpg.asset.json";
+import focaccia from "@/assets/focaccia.jpg.asset.json";
 import { cafe, menu, reviews } from "@/lib/cafe";
 
 const TITLE = "Wildbean Café | Amtala — Coffee, Food & Quick Bites";
@@ -290,9 +293,9 @@ function Gallery() {
     { src: coffee.url, alt: "Filter coffee in brass davara", cls: "md:col-span-2 md:row-span-2" },
     { src: cups.url, alt: "Wildbean Café branded cups", cls: "md:row-span-2" },
     { src: logo.url, alt: "Wildbean Café logo", cls: "" },
-    { src: null, alt: "Café interior — photo coming soon", cls: "" },
-    { src: null, alt: "Food — photo coming soon", cls: "" },
-    { src: null, alt: "Team — photo coming soon", cls: "md:col-span-2" },
+    { src: espresso.url, alt: "Espresso in a glass cup with coffee beans", cls: "" },
+    { src: cold.url, alt: "Wildbean Café Creamy Choco Cold Coffee", cls: "" },
+    { src: focaccia.url, alt: "Focaccia sandwich on a wooden board", cls: "md:col-span-2" },
   ];
   const [open, setOpen] = useState<string | null>(null);
   return (
