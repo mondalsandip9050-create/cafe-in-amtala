@@ -5,7 +5,7 @@ import {
   Utensils, ShoppingBag, Bike, Timer, CupSoda, Cookie, Car, Star, ChevronDown, ImageIcon,
   Instagram, Facebook, ChevronLeft, ChevronRight,
 } from "lucide-react";
-import logo from "@/assets/logo.jpg.asset.json";
+import logo from "@/assets/logo-new.png.asset.json";
 import cups from "@/assets/cups.jpg.asset.json";
 import coffee from "@/assets/coffee.jpg.asset.json";
 import espresso from "@/assets/espresso.jpg.asset.json";
