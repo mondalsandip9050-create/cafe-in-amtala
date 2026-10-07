@@ -207,7 +207,7 @@ function Why() {
 
 function MenuSection() {
   const cats = Object.keys(menu);
-  const [cat, setCat] = useState(cats[0]);
+  const [cat, setCat] = useState<string>(cats[0]!);
   return (
     <section id="menu" className="mx-auto max-w-7xl px-5 py-24 md:py-32 lg:px-8">
       <div className="reveal mx-auto max-w-2xl text-center">
@@ -224,7 +224,7 @@ function MenuSection() {
         ))}
       </div>
       <div key={cat} className="mt-10 grid gap-4 md:grid-cols-2">
-        {menu[cat].map((m, i) => (
+        {(menu[cat] ?? []).map((m, i) => (
           <article key={m.name} className="animate-fade-up group flex items-start justify-between gap-5 rounded-2xl border border-border bg-card p-6 transition hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-card" style={{ animationDelay: `${i * 60}ms` }}>
             <div className="min-w-0">
               <h3 className="flex items-center gap-2.5 font-sans text-lg font-semibold">
@@ -321,7 +321,7 @@ function Gallery() {
 
 function Reviews() {
   const [i, setI] = useState(0);
-  const r = reviews[i];
+  const r = reviews[i]!;
   return (
     <section id="reviews" className="border-y border-border bg-card/40">
       <div className="reveal mx-auto max-w-3xl px-5 py-24 text-center">
